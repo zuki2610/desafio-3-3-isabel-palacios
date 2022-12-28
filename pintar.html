@@ -10,12 +10,12 @@
     <div id='ele1'> hello </div>
 </body>
     <script>
-        const pintar = (elementoHTML) => elementoHTML.style.backgroundColor = 'yellow';
+        const pintar = (elementoHTML, color = 'green') => elementoHTML.style.backgroundColor = color;
         
         const elementoHTML = document.getElementById('ele1');
         
         elementoHTML.addEventListener('click', () => { 
-            pintar(elementoHTML) 
+            pintar(elementoHTML, 'yellow') 
         });
     </script>
 </html>
