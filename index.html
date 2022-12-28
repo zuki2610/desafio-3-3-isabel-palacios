@@ -4,17 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <div id="ele1"> hello </div>
+    <div class="cotenedor">
+        <h1>Selector de divs</h1>
+        <h2>Para pintar un div presione la tecla "a","d" o "s"</h2>
+        <h2>Una vez seleccionado el color haz click sobre el div.</h2>
+        <ul>
+            <li>a = Verde</li>
+            <li>s = Amarillo</li>
+            <li>d = Rojo</li>
+        </ul>
+        <div class="div-nombre-color-seleccionado">
+            <p>Color seleccionado: </p>
+        </div>
+        <div id="div-color-seleccionado"></div>
+        <div class="color-del-contenedor">
+            <div class="div-color" id="div-1">Soy el div 1</div>
+            <div class="div-color" id="div-2">Soy el div 2</div>
+            <div class="div-color" id="div-3">Soy el div 3</div>
+            <div class="div-color" id="div-4">Soy el div 4</div>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
 </body>
-<script>
-    function pintar(){
-        document.getElementById("ele1")
-        ele.style.backgroundColor = 'yellow'
-    }
-    ele = document.getElementById("ele1")
-    ele.addEventListener("click", pintar);
-    </script>
 </html>
