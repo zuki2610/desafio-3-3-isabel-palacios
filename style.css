@@ -1,0 +1,121 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin: 0;
+
+}
+
+header,
+h2,
+h3 {
+    -webkit-animation: roll-in-left .29s ease-out both;
+    animation: roll-in-left .6s ease-out both;
+    text-align: center;
+    padding-top: 2vh;
+    color: bisque;
+}
+@-webkit-keyframes roll-in-left {
+    0% {
+        -webkit-transform: translateX(-800px) rotate(-540deg);
+        transform: translateX(-800px) rotate(-540deg);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        opacity: 1
+    }
+}
+
+@keyframes roll-in-left {
+    0% {
+        -webkit-transform: translateX(-800px) rotate(-540deg);
+        transform: translateX(-800px) rotate(-540deg);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        opacity: 1
+    }
+}
+ul,
+p {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    padding-top: 5vh;
+}
+
+.a {
+    color: green;
+}
+
+.s {
+    color: yellow;
+}
+
+.d {
+    color: red;
+}
+
+.color-del-contenedor {
+    display: flex;
+    gap: 9vw;
+    padding-left: 11vw;
+}
+
+.div-color {
+    border: 4px inset wheat;
+    border-radius: 10px;
+    box-shadow: rgba(230, 228, 228, 0.49) 0px 5px 15px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.rotate-scale-up {
+    -webkit-animation: rotate-scale-up .65s linear both;
+    animation: rotate-scale-up .65s linear both
+}
+
+@-webkit-keyframes rotate-scale-up {
+    0% {
+        -webkit-transform: scale(1) rotateZ(0);
+        transform: scale(1) rotateZ(0)
+    }
+
+    50% {
+        -webkit-transform: scale(2) rotateZ(180deg);
+        transform: scale(2) rotateZ(180deg)
+    }
+
+    100% {
+        -webkit-transform: scale(1) rotateZ(360deg);
+        transform: scale(1) rotateZ(360deg)
+    }
+}
+
+@keyframes rotate-scale-up {
+    0% {
+        -webkit-transform: scale(1) rotateZ(0);
+        transform: scale(1) rotateZ(0)
+    }
+
+    50% {
+        -webkit-transform: scale(2) rotateZ(180deg);
+        transform: scale(2) rotateZ(180deg)
+    }
+
+    100% {
+        -webkit-transform: scale(1) rotateZ(360deg);
+        transform: scale(1) rotateZ(360deg)
+    }
+}
